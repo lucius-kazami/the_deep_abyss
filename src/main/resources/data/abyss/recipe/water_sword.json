@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "I",
+    "I",
+    "A"
+  ],
+  "key": {
+    "I": "abyss:water_ingot",
+    "A": "abyss:amber"
+  },
+  "result": {
+    "id": "abyss:water_sword",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "I I",
+    "IAI",
+    "III"
+  ],
+  "key": {
+    "I": "abyss:earth_ingot",
+    "A": "abyss:amber"
+  },
+  "result": {
+    "id": "abyss:earth_chestplate",
+    "count": 1
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "hatch=0,waterlogged=false": {
+      "model": "abyss:block/mosasaurus_egg_0"
+    },
+    "hatch=0,waterlogged=true": {
+      "model": "abyss:block/mosasaurus_egg_0"
+    },
+    "hatch=1,waterlogged=false": {
+      "model": "abyss:block/mosasaurus_egg_1"
+    },
+    "hatch=1,waterlogged=true": {
+      "model": "abyss:block/mosasaurus_egg_1"
+    },
+    "hatch=2,waterlogged=false": {
+      "model": "abyss:block/mosasaurus_egg_2"
+    },
+    "hatch=2,waterlogged=true": {
+      "model": "abyss:block/mosasaurus_egg_2"
+    }
+  }
+}

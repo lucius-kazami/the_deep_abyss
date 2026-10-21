@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "IAI",
+    "I I",
+    "I I"
+  ],
+  "key": {
+    "I": "abyss:fire_ingot",
+    "A": "abyss:amber"
+  },
+  "result": {
+    "id": "abyss:fire_leggings",
+    "count": 1
+  }
+}

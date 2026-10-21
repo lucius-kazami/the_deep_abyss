@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "SI ",
+    "S A",
+    "SI "
+  ],
+  "key": {
+    "I": "abyss:lightning_ingot",
+    "A": "abyss:amber",
+    "S": "minecraft:string"
+  },
+  "result": {
+    "id": "abyss:lightning_bow",
+    "count": 1
+  }
+}

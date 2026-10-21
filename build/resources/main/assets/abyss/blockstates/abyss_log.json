@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=y": { "model": "abyss:block/abyss_log" },
+    "axis=z": { "model": "abyss:block/abyss_log", "x": 90 },
+    "axis=x": { "model": "abyss:block/abyss_log", "x": 90, "y": 90 }
+  }
+}

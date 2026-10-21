@@ -1,0 +1,304 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+    id 'idea'
+    id 'net.neoforged.moddev' version '2.0.147'
+}
+
+version = mod_version
+group = mod_group_id
+
+
+// ============================================================
+// REPOSITORIES
+// ============================================================
+
+repositories {
+
+    mavenLocal()
+
+    exclusiveContent {
+
+        forRepository {
+
+            maven {
+                name = 'GeckoLib'
+                url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+            }
+        }
+
+        filter {
+            includeGroup('software.bernie.geckolib')
+        }
+    }
+}
+
+
+// ============================================================
+// PROJECT
+// ============================================================
+
+base {
+    archivesName = mod_id
+}
+
+
+// ============================================================
+// JAVA
+// ============================================================
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+
+// ============================================================
+// NEOFORGE
+// ============================================================
+
+neoForge {
+
+    version = project.neo_version
+
+    parchment {
+        mappingsVersion = project.parchment_mappings_version
+        minecraftVersion = project.parchment_minecraft_version
+    }
+
+
+    // ========================================================
+    // RUN CONFIGURATIONS
+    // ========================================================
+
+    runs {
+
+        client {
+
+            client()
+
+            systemProperty(
+                    'neoforge.enabledGameTestNamespaces',
+                    project.mod_id
+            )
+        }
+
+
+        server {
+
+            server()
+
+            programArgument '--nogui'
+
+            systemProperty(
+                    'neoforge.enabledGameTestNamespaces',
+                    project.mod_id
+            )
+        }
+
+
+        gameTestServer {
+
+            type = "gameTestServer"
+
+            systemProperty(
+                    'neoforge.enabledGameTestNamespaces',
+                    project.mod_id
+            )
+        }
+
+
+        data {
+
+            clientData()
+
+            programArguments.addAll(
+                    '--mod',
+                    project.mod_id,
+
+                    '--all',
+
+                    '--output',
+                    file('src/generated/resources/').getAbsolutePath(),
+
+                    '--existing',
+                    file('src/main/resources/').getAbsolutePath()
+            )
+        }
+
+
+        configureEach {
+
+            systemProperty(
+                    'forge.logging.markers',
+                    'REGISTRIES'
+            )
+
+            logLevel =
+                    org.slf4j.event.Level.DEBUG
+        }
+    }
+
+
+    // ========================================================
+    // MOD SOURCE SET
+    // ========================================================
+
+    mods {
+        "${mod_id}" {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+
+// ============================================================
+// GENERATED RESOURCES
+// ============================================================
+
+sourceSets.main.resources {
+    srcDir 'src/generated/resources'
+}
+
+
+// ============================================================
+// DEPENDENCIES
+// ============================================================
+
+dependencies {
+
+    // ========================================================
+    // GECKOLIB
+    // ========================================================
+
+    implementation(
+            "software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}"
+    )
+}
+
+
+// ============================================================
+// MOD METADATA
+// ============================================================
+
+var generateModMetadata =
+        tasks.register(
+                "generateModMetadata",
+                ProcessResources
+        ) {
+
+            var replaceProperties = [
+
+                    minecraft_version:
+                            minecraft_version,
+
+                    minecraft_version_range:
+                            minecraft_version_range,
+
+                    neo_version:
+                            neo_version,
+
+                    neo_version_range:
+                            neo_version_range,
+
+                    loader_version_range:
+                            loader_version_range,
+
+                    mod_id:
+                            mod_id,
+
+                    mod_name:
+                            mod_name,
+
+                    mod_license:
+                            mod_license,
+
+                    mod_version:
+                            mod_version,
+
+                    mod_authors:
+                            mod_authors,
+
+                    mod_description:
+                            mod_description
+            ]
+
+
+            inputs.properties(
+                    replaceProperties
+            )
+
+
+            expand(
+                    replaceProperties
+            )
+
+
+            from(
+                    "src/main/templates"
+            )
+
+
+            into(
+                    "build/generated/sources/modMetadata"
+            )
+        }
+
+
+// ============================================================
+// GENERATED METADATA RESOURCE
+// ============================================================
+
+sourceSets.main.resources.srcDir(
+        generateModMetadata
+)
+
+
+// ============================================================
+// IDE SYNC
+// ============================================================
+
+neoForge.ideSyncTask(
+        generateModMetadata
+)
+
+
+// ============================================================
+// MAVEN PUBLISHING
+// ============================================================
+
+publishing {
+
+    publications {
+
+        register(
+                'mavenJava',
+                MavenPublication
+        ) {
+
+            from components.java
+        }
+    }
+
+
+    repositories {
+
+        maven {
+
+            url =
+                    "file://${project.projectDir}/repo"
+        }
+    }
+}
+
+
+// ============================================================
+// INTELLIJ IDEA
+// ============================================================
+
+idea {
+
+    module {
+
+        downloadSources = true
+
+        downloadJavadoc = true
+    }
+}

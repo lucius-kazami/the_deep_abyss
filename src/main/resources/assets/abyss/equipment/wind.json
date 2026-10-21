@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "abyss:wind"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "abyss:wind"
+      }
+    ]
+  }
+}

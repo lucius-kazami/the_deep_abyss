@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "abyss:fire_broken_ingot",
+    "abyss:fire_broken_ingot"
+  ],
+  "result": { "id": "abyss:fire_ingot", "count": 1 }
+}

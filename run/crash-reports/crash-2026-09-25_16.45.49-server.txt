@@ -1,0 +1,173 @@
+---- Minecraft Crash Report ----
+// I bet Cylons wouldn't have this problem.
+
+Time: 2026-09-25 16:45:49
+Description: Exception chunk generation/loading
+
+java.lang.IllegalArgumentException: bound must be positive
+	at java.base/java.util.Random.nextInt(Random.java:557) ~[?:?] {}
+	at TRANSFORMER/abyss@1.0-SNAPSHOT/com.akashi.abyss.abyss.event.AbyssCaveGenerator.carveMineshaft(AbyssCaveGenerator.java:128) ~[main/:?] {}
+	at TRANSFORMER/abyss@1.0-SNAPSHOT/com.akashi.abyss.abyss.event.AbyssCaveGenerator.onChunkLoad(AbyssCaveGenerator.java:62) ~[main/:?] {}
+	at net.neoforged.bus.EventBus.post(EventBus.java:360) ~[bus-8.0.5.jar:?] {}
+	at net.neoforged.bus.EventBus.post(EventBus.java:328) ~[bus-8.0.5.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.world.level.chunk.status.ChunkStatusTasks.lambda$full$2(ChunkStatusTasks.java:236) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:159) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.server.level.ServerChunkCache$MainThreadExecutor.doRunTask(ServerChunkCache.java:636) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:130) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.server.level.ServerChunkCache$MainThreadExecutor.pollTask(ServerChunkCache.java:645) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:143) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.server.level.ServerChunkCache$MainThreadExecutor.managedBlock(ServerChunkCache.java:610) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.server.level.ServerChunkCache.getChunk(ServerChunkCache.java:174) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.world.level.Level.getChunk(Level.java:202) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.world.level.LevelReader.getChunk(LevelReader.java:136) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.world.level.Level.getChunk(Level.java:196) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.world.level.Level.getChunkAt(Level.java:192) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.world.level.Level.getBlockEntity(Level.java:752) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.server.level.ServerPlayerGameMode.destroyBlock(ServerPlayerGameMode.java:274) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.server.level.ServerPlayerGameMode.destroyAndAck(ServerPlayerGameMode.java:257) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.server.level.ServerPlayerGameMode.handleBlockBreakAction(ServerPlayerGameMode.java:175) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.server.network.ServerGamePacketListenerImpl.handlePlayerAction(ServerGamePacketListenerImpl.java:1276) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.network.protocol.game.ServerboundPlayerActionPacket.handle(ServerboundPlayerActionPacket.java:59) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.network.protocol.game.ServerboundPlayerActionPacket.handle(ServerboundPlayerActionPacket.java:10) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.network.PacketProcessor$ListenerAndPacket.handle(PacketProcessor.java:64) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.network.PacketProcessor.processQueuedPackets(PacketProcessor.java:50) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:785) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:284) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at java.base/java.util.Random.nextInt(Random.java:557) ~[?:?] {}
+	at TRANSFORMER/abyss@1.0-SNAPSHOT/com.akashi.abyss.abyss.event.AbyssCaveGenerator.carveMineshaft(AbyssCaveGenerator.java:128) ~[main/:?] {}
+	at TRANSFORMER/abyss@1.0-SNAPSHOT/com.akashi.abyss.abyss.event.AbyssCaveGenerator.onChunkLoad(AbyssCaveGenerator.java:62) ~[main/:?] {}
+	at net.neoforged.bus.EventBus.post(EventBus.java:360) ~[bus-8.0.5.jar:?] {}
+	at net.neoforged.bus.EventBus.post(EventBus.java:328) ~[bus-8.0.5.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.world.level.chunk.status.ChunkStatusTasks.lambda$full$2(ChunkStatusTasks.java:236) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:159) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.server.level.ServerChunkCache$MainThreadExecutor.doRunTask(ServerChunkCache.java:636) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:130) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.server.level.ServerChunkCache$MainThreadExecutor.pollTask(ServerChunkCache.java:645) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:143) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.server.level.ServerChunkCache$MainThreadExecutor.managedBlock(ServerChunkCache.java:610) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.server.level.ServerChunkCache.getChunk(ServerChunkCache.java:174) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.world.level.Level.getChunk(Level.java:202) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.world.level.LevelReader.getChunk(LevelReader.java:136) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.world.level.Level.getChunk(Level.java:196) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.world.level.Level.getChunkAt(Level.java:192) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.world.level.Level.getBlockEntity(Level.java:752) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.server.level.ServerPlayerGameMode.destroyBlock(ServerPlayerGameMode.java:274) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.server.level.ServerPlayerGameMode.destroyAndAck(ServerPlayerGameMode.java:257) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.server.level.ServerPlayerGameMode.handleBlockBreakAction(ServerPlayerGameMode.java:175) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.server.network.ServerGamePacketListenerImpl.handlePlayerAction(ServerGamePacketListenerImpl.java:1276) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+-- Affected level --
+Details:
+	All players: 0 total; 
+	Chunk stats: 2601
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (-16,72,16), Section: (at 0,8,0 in -1,4,1; chunk contains blocks -16,-64,16 to -1,319,31), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,-64,0 to -1,319,511)
+	Level time: 1559 game time, 1559 day time
+	Level name: Новый мир
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Commands: true
+	Level weather: Rain time: 96204 (now: false), thunder time: 82991 (now: false)
+	Known server brands: neoforge
+	Removed feature flags: 
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+	Loaded entity count: 205
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.server.level.ServerLevel.fillReportDetails(ServerLevel.java:1854) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1168) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1037) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:116) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:787) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:284) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.10
+	Minecraft Version ID: 1.21.10
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.12.1, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 109618024 bytes (104 MiB) / 1075838976 bytes (1026 MiB) up to 4217372672 bytes (4022 MiB)
+	CPUs: 12
+	Processor Vendor: GenuineIntel
+	Processor Name: 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz
+	Identifier: Intel64 Family 6 Model 141 Stepping 1
+	Microarchitecture: Tiger Lake
+	Frequency (GHz): 2.69
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 12
+	Graphics card #0 name: Intel(R) UHD Graphics
+	Graphics card #0 vendor: Intel Corporation
+	Graphics card #0 VRAM (MiB): 1024.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 30.0.101.2079
+	Graphics card #1 name: NVIDIA GeForce RTX 3050 Laptop GPU
+	Graphics card #1 vendor: NVIDIA
+	Graphics card #1 VRAM (MiB): 4096.00
+	Graphics card #1 deviceId: VideoController2
+	Graphics card #1 versionInfo: 32.0.15.7283
+	Memory slot #0 capacity (MiB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 3.20
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MiB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 3.20
+	Memory slot #1 type: DDR4
+	Virtual memory max (MiB): 45544.14
+	Virtual memory used (MiB): 41560.03
+	Swap memory total (MiB): 29458.48
+	Swap memory used (MiB): 9633.72
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 41933.58, total: 487222.00
+	Space in storage for workdir (MiB): available: 41933.58, total: 487222.00
+	JVM Flags: 0 total; 
+	Debug Flags: 0 total; 
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/29, l='ServerLevel[Новый мир]', x=-25.70, y=-64.00, z=22.70]]
+	Active Data Packs: vanilla, mod_data, mod/abyss, mod/neoforge
+	Available Data Packs: minecart_improvements, redstone_experiments, trade_rebalance, vanilla, mod/abyss, mod/neoforge, mod_data
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Experimental
+	World Seed: -4568835664817889543
+	Suppressed Exceptions: 
+		Latest entries:
+			packet/serverbound/minecraft:player_action:class net.minecraft.ReportedException: Exception chunk generation/loading (21ms ago)
+			packet/serverbound/minecraft:accept_teleportation:class net.minecraft.ReportedException: Exception chunk generation/loading (16ms ago)
+		Entry counts:
+			packet/serverbound/minecraft:accept_teleportation:class net.minecraft.ReportedException x 1
+			packet/serverbound/minecraft:player_action:class net.minecraft.ReportedException x 1
+
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'neoforge'; Server brand changed to 'neoforge'
+	Launched Version: 21.10.64
+	Class Processors: 
+		00,00%: neoforge:neoforge_dev_dist_cleaner
+		00,00%: neoforge:computing_frames (marker)
+		00,00%: neoforge:runtime_enum_extender
+		04,67%: neoforge:access_transformer
+		00,05%: neoforge:mixin
+		00,00%: neoforge:simple_processors_default (marker)
+		00,01%: neoforge.coremods:field_to_getter.net.minecraft.world.level.biome.biome
+		00,01%: neoforge.coremods:field_to_getter.net.minecraft.world.level.block.flowerpotblock
+		00,01%: neoforge.coremods:field_to_getter.net.minecraft.world.level.levelgen.structure.structure
+		00,25%: neoforge.coremods:method_redirector
+	Mod List: 
+		neoforge-21.10.64-client-extra-aka-minecraft-resou|Minecraft                     |minecraft                     |1.21.10             |Manifest: NOSIGNATURE
+		neoforge-21.10.64.jar                             |NeoForge                      |neoforge                      |21.10.64            |Manifest: NOSIGNATURE
+		main                                              |the_deep_abyss                |abyss                         |1.0-SNAPSHOT        |Manifest: NOSIGNATURE
+	Crash Report UUID: 69e60e03-5fbd-45a3-8cf6-a1fbb77b2aaa
+	FML: 10.0.32
+	NeoForge: 21.10.64

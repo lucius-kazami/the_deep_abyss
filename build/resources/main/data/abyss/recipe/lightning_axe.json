@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "II",
+    "IA",
+    " A"
+  ],
+  "key": {
+    "I": "abyss:lightning_ingot",
+    "A": "abyss:amber"
+  },
+  "result": {
+    "id": "abyss:lightning_axe",
+    "count": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "hatch=0": {
+      "model": "abyss:block/therizinosaurus_egg"
+    },
+    "hatch=1": {
+      "model": "abyss:block/therizinosaurus_egg"
+    },
+    "hatch=2": {
+      "model": "abyss:block/therizinosaurus_egg"
+    }
+  }
+}

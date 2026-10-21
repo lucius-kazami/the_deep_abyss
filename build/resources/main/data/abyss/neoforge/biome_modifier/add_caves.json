@@ -1,0 +1,5 @@
+{
+  "type": "neoforge:add_carvers",
+  "biomes": "minecraft:plains",
+  "carvers": ["minecraft:cave", "minecraft:cave_extra_underground", "minecraft:canyon"]
+}

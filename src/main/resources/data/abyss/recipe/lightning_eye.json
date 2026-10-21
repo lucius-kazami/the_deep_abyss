@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IRI",
+    "IAI",
+    "IRI"
+  ],
+  "key": {
+    "I": "abyss:lightning_ingot",
+    "A": "abyss:amber",
+    "R": "abyss:ruby"
+  },
+  "result": {
+    "id": "abyss:lightning_eye",
+    "count": 1
+  }
+}

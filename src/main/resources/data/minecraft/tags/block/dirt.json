@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "abyss:abyss_grass",
+    "abyss:abyss_grass_wet",
+    "abyss:abyss_soil",
+    "abyss:abyss_charred_ground"
+  ]
+}

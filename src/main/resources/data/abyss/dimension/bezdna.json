@@ -1,0 +1,33 @@
+{
+  "type": "abyss:bezdna",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "minecraft:plains",
+      "lakes": false,
+      "features": true,
+      "layers": [
+        { "block": "minecraft:bedrock", "height": 7 },
+        { "block": "minecraft:deepslate", "height": 99 },
+        { "block": "minecraft:deepslate", "height": 1 },
+        { "block": "minecraft:air", "height": 149 },
+        { "block": "minecraft:deepslate", "height": 1 },
+        { "block": "minecraft:deepslate", "height": 95 },
+        { "block": "minecraft:obsidian", "height": 1 },
+        { "block": "minecraft:sandstone", "height": 2 },
+        { "block": "minecraft:sand", "height": 2 },
+        { "block": "minecraft:water", "height": 114 },
+        { "block": "minecraft:obsidian", "height": 1 },
+        { "block": "minecraft:deepslate", "height": 90 },
+        { "block": "minecraft:deepslate", "height": 1 },
+        { "block": "minecraft:air", "height": 148 },
+        { "block": "minecraft:deepslate", "height": 1 },
+        { "block": "minecraft:deepslate", "height": 150 },
+        { "block": "minecraft:deepslate", "height": 1 },
+        { "block": "minecraft:air", "height": 148 },
+        { "block": "minecraft:deepslate", "height": 1 },
+        { "block": "minecraft:stone", "height": 396 }
+      ]
+    }
+  }
+}

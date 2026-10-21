@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "hatch=0,waterlogged=true": {
+      "model": "abyss:block/elasmosaurus_egg_stage0"
+    },
+    "hatch=0,waterlogged=false": {
+      "model": "abyss:block/elasmosaurus_egg_stage0"
+    },
+    "hatch=1,waterlogged=true": {
+      "model": "abyss:block/elasmosaurus_egg_stage1"
+    },
+    "hatch=1,waterlogged=false": {
+      "model": "abyss:block/elasmosaurus_egg_stage1"
+    },
+    "hatch=2,waterlogged=true": {
+      "model": "abyss:block/elasmosaurus_egg_stage2"
+    },
+    "hatch=2,waterlogged=false": {
+      "model": "abyss:block/elasmosaurus_egg_stage2"
+    }
+  }
+}

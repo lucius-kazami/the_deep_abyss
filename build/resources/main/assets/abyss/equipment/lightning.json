@@ -1,0 +1,6 @@
+{
+  "layers": {
+    "humanoid": [ { "texture": "abyss:lightning" } ],
+    "humanoid_leggings": [ { "texture": "abyss:lightning" } ]
+  }
+}

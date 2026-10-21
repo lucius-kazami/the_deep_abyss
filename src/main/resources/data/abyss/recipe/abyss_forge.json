@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "FIF",
+    "DAD",
+    "CCC"
+  ],
+  "key": {
+    "F": "minecraft:blaze_powder",
+    "I": "minecraft:iron_block",
+    "D": "minecraft:diamond",
+    "A": "abyss:amber",
+    "C": "minecraft:cobbled_deepslate"
+  },
+  "result": {
+    "id": "abyss:abyss_forge",
+    "count": 1
+  }
+}

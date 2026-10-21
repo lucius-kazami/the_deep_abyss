@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "abyss:wind_broken_ingot",
+    "abyss:wind_broken_ingot"
+  ],
+  "result": { "id": "abyss:wind_ingot", "count": 1 }
+}

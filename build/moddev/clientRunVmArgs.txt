@@ -1,0 +1,9 @@
+--add-opens
+java.base/java.lang.invoke=ALL-UNNAMED
+--add-exports
+jdk.naming.dns/com.sun.jndi.dns=java.naming
+-Dlog4j2.configurationFile=C:\\Users\\Skupka\\IdeaProjects\\the_deep_abyss\\build\\moddev\\clientLog4j2.xml
+-Djava.net.preferIPv6Addresses=system
+-Dneoforge.enableGameTest=true
+-Dneoforge.enabledGameTestNamespaces=abyss
+-Dforge.logging.markers=REGISTRIES

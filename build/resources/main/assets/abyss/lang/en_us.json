@@ -1,0 +1,19 @@
+{
+  "item.abyss.example_item": "Abyss Energy Fruit",
+  "item.abyss.abyss_artifact": "Ancient Relic",
+  "itemGroup.abyss": "Abyss",
+  "block.abyss.abyss_grass": "Abyss Grass",
+  "block.abyss.abyss_grass_wet": "Wet Abyss Grass",
+  "block.abyss.abyss_soil": "Abyss Soil",
+  "block.abyss.abyss_charred_ground": "Charred Ground",
+  "block.abyss.abyss_log": "Abyss Log",
+  "block.abyss.abyss_charred_log": "Charred Abyss Log",
+  "block.abyss.abyss_white_log": "White Abyss Log",
+  "block.abyss.red_leaves": "Red Abyss Leaves",
+  "block.abyss.yellow_leaves": "Yellow Abyss Leaves",
+  "block.abyss.green_leaves": "Green Abyss Leaves",
+  "block.abyss.purple_leaves": "Purple Abyss Leaves",
+  "block.abyss.abyss_sapling": "Abyss Sapling",
+  "block.abyss.charred_sapling": "Charred Sapling",
+  "block.abyss.white_sapling": "White Abyss Sapling"
+}

@@ -1,0 +1,178 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.trilobite.walk": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            0,
+            0,
+            "Math.sin(query.modified_distance_moved * 80) * 1.5 * Math.min(1, query.modified_move_speed * 4)"
+          ],
+          "position": [
+            0,
+            "Math.abs(Math.sin(query.modified_distance_moved * 80)) * 0.25 * Math.min(1, query.modified_move_speed * 4)",
+            0
+          ]
+        },
+        "head": {
+          "rotation": [
+            "Math.cos(query.modified_distance_moved * 80 * 2) * 1.5 * Math.min(1, query.modified_move_speed * 4)",
+            "-Math.sin(query.modified_distance_moved * 80) * 3 * Math.min(1, query.modified_move_speed * 4)",
+            0
+          ]
+        },
+        "shell": {
+          "rotation": [
+            "Math.sin(query.modified_distance_moved * 80 * 2) * 1 * Math.min(1, query.modified_move_speed * 4)",
+            0,
+            0
+          ]
+        },
+        "segment_1": {
+          "rotation": [
+            0,
+            "Math.sin(query.modified_distance_moved * 80 - 35) * 3 * Math.min(1, query.modified_move_speed * 4)",
+            0
+          ]
+        },
+        "segment_2": {
+          "rotation": [
+            0,
+            "Math.sin(query.modified_distance_moved * 80 - 70) * 4 * Math.min(1, query.modified_move_speed * 4)",
+            0
+          ]
+        },
+        "segment_3": {
+          "rotation": [
+            0,
+            "Math.sin(query.modified_distance_moved * 80 - 105) * 5 * Math.min(1, query.modified_move_speed * 4)",
+            0
+          ]
+        },
+        "segment_4": {
+          "rotation": [
+            0,
+            "Math.sin(query.modified_distance_moved * 80 - 140) * 6 * Math.min(1, query.modified_move_speed * 4)",
+            0
+          ]
+        },
+        "segment_5": {
+          "rotation": [
+            0,
+            "Math.sin(query.modified_distance_moved * 80 - 175) * 7 * Math.min(1, query.modified_move_speed * 4)",
+            0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            0,
+            "Math.sin(query.modified_distance_moved * 80 - 210) * 9 * Math.min(1, query.modified_move_speed * 4)",
+            0
+          ]
+        },
+        "legs_left": {
+          "rotation": [
+            "Math.sin(query.modified_distance_moved * 80) * 6 * Math.min(1, query.modified_move_speed * 4)",
+            0,
+            0
+          ],
+          "position": [
+            0,
+            "Math.max(0, Math.cos(query.modified_distance_moved * 80)) * 0.5 * Math.min(1, query.modified_move_speed * 4)",
+            "Math.sin(query.modified_distance_moved * 80) * 0.8 * Math.min(1, query.modified_move_speed * 4)"
+          ]
+        },
+        "legs_right": {
+          "rotation": [
+            "Math.sin(query.modified_distance_moved * 80 + 180) * 6 * Math.min(1, query.modified_move_speed * 4)",
+            0,
+            0
+          ],
+          "position": [
+            0,
+            "Math.max(0, Math.cos(query.modified_distance_moved * 80 + 180)) * 0.5 * Math.min(1, query.modified_move_speed * 4)",
+            "Math.sin(query.modified_distance_moved * 80 + 180) * 0.8 * Math.min(1, query.modified_move_speed * 4)"
+          ]
+        }
+      }
+    },
+    "animation.trilobite.idle": {
+      "loop": true,
+      "animation_length": 3.0,
+      "bones": {
+        "head": {
+          "rotation": [
+            "Math.sin(query.anim_time * 120) * 1.5",
+            "Math.sin(query.anim_time * 120 * 2) * 3",
+            0
+          ]
+        },
+        "shell": {
+          "scale": [
+            1,
+            "1 + Math.sin(query.anim_time * 120) * 0.02",
+            1
+          ]
+        },
+        "segment_1": {
+          "rotation": [
+            0,
+            "Math.sin(query.anim_time * 120 - 40) * 2",
+            0
+          ]
+        },
+        "segment_2": {
+          "rotation": [
+            0,
+            "Math.sin(query.anim_time * 120 - 80) * 2.5",
+            0
+          ]
+        },
+        "segment_3": {
+          "rotation": [
+            0,
+            "Math.sin(query.anim_time * 120 - 120) * 3",
+            0
+          ]
+        },
+        "segment_4": {
+          "rotation": [
+            0,
+            "Math.sin(query.anim_time * 120 - 160) * 3.5",
+            0
+          ]
+        },
+        "segment_5": {
+          "rotation": [
+            0,
+            "Math.sin(query.anim_time * 120 - 200) * 4",
+            0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            0,
+            "Math.sin(query.anim_time * 120 - 240) * 5",
+            0
+          ]
+        },
+        "legs_left": {
+          "rotation": [
+            "Math.sin(query.anim_time * 360) * 3",
+            0,
+            0
+          ]
+        },
+        "legs_right": {
+          "rotation": [
+            "Math.sin(query.anim_time * 360 + 90) * 3",
+            0,
+            0
+          ]
+        }
+      }
+    }
+  }
+}

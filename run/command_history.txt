@@ -1,0 +1,50 @@
+/gamemode survival
+/gamemode creative
+/summon abyss:therizinosaurus ~ ~ ~
+/gamemode survival
+/gamemode creative
+/summon abyss:therizinosaurus ~ ~ ~
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/summon abyss:mosasaurus ~ ~ ~
+/gamemode survival
+/gamemode creative
+/summon abyss:mosasaurus ~ ~ ~
+/gamemode survival
+/gamemode creative
+/summon abyss:mosasaurus ~ ~ ~
+/gamemode survival
+/gamemode creative
+/summon abyss:mosasaurus ~ ~ ~
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/summon abyss:xiphactinus ~ ~ ~
+/gamemode survival
+/gamemode creative
+/tp @s 0 -380 0
+/summon abyss:elasmosaurus ~ ~ ~
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/summon abyss:archelon ~ ~ ~
+/summon abyss:archelon_1 ~ ~ ~
+/summon abyss:archelon ~ ~ ~
+/summon abyss:trilobite ~ ~ ~
+/execute as @e[type=abyss:trilobite,distance=..100] run data get entity @s Pos
+/tp @s @e[type=abyss:trilobite,sort=nearest,limit=1]
+/summon abyss:orthoceras ~2 ~ ~
+/summon abyss:orthoceras ~ ~ ~
+/summon abyss:orthoceras ~6 ~ ~
+/summon abyss:orthoceras ~ ~ ~
+/summon abyss:quetzalcoatlus ~ ~5 ~
+/tp @s @e[type=abyss:quetzalcoatlus,sort=nearest,limit=1]
+/tp @s 0 -380 0
+/summon abyss:quetzalcoatlus ~ ~ ~

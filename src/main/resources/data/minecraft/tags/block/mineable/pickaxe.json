@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "abyss:earth_ore",
+    "abyss:fire_ore",
+    "abyss:water_ore",
+    "abyss:wind_ore",
+    "abyss:lightning_ore",
+    "abyss:abyss_light_stone",
+    "abyss:ruby_ore",
+    "abyss:sapphire_ore",
+    "abyss:amber_ore",
+    "abyss:abyss_forge"
+  ]
+}

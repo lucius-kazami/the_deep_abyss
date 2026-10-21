@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "abyss:block/abyss_forge_top",
+    "front": "abyss:block/abyss_forge_front",
+    "side": "abyss:block/abyss_forge_side"
+  }
+}

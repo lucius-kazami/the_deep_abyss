@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "III",
+    " A ",
+    " A "
+  ],
+  "key": {
+    "I": "abyss:earth_ingot",
+    "A": "abyss:amber"
+  },
+  "result": {
+    "id": "abyss:earth_pickaxe",
+    "count": 1
+  }
+}

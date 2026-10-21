@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        { "condition": "minecraft:random_chance", "chance": 0.05 }
+      ],
+      "entries": [
+        { "type": "minecraft:item", "name": "abyss:abyss_sapling" }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        { "condition": "minecraft:random_chance", "chance": 0.05 }
+      ],
+      "entries": [
+        { "type": "minecraft:item", "name": "abyss:pale_antidote_fruit" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "abyss:abyss_log",
+    "abyss:abyss_charred_log",
+    "abyss:abyss_white_log"
+  ]
+}

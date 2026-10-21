@@ -1,0 +1,939 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.quetzalcoatlus.idle": {
+      "animation_length": 1,
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "neck1": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "wing_l": {
+          "rotation": [
+            0,
+            0,
+            65
+          ]
+        },
+        "wing_fore_l": {
+          "rotation": [
+            0,
+            0,
+            15
+          ]
+        },
+        "wing_hand_l": {
+          "rotation": [
+            0,
+            0,
+            15
+          ]
+        },
+        "hind_leg_l": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "hind_shin_l": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "wing_r": {
+          "rotation": [
+            0,
+            0,
+            -65
+          ]
+        },
+        "wing_fore_r": {
+          "rotation": [
+            0,
+            0,
+            -15
+          ]
+        },
+        "wing_hand_r": {
+          "rotation": [
+            0,
+            0,
+            -15
+          ]
+        },
+        "hind_leg_r": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "hind_shin_r": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.quetzalcoatlus.sit": {
+      "animation_length": 1,
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "neck1": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "wing_l": {
+          "rotation": [
+            0,
+            0,
+            77
+          ]
+        },
+        "wing_fore_l": {
+          "rotation": [
+            0,
+            0,
+            20
+          ]
+        },
+        "wing_hand_l": {
+          "rotation": [
+            0,
+            0,
+            25
+          ]
+        },
+        "hind_leg_l": {
+          "rotation": [
+            15,
+            0,
+            0
+          ]
+        },
+        "hind_shin_l": {
+          "rotation": [
+            15,
+            0,
+            0
+          ]
+        },
+        "wing_r": {
+          "rotation": [
+            0,
+            0,
+            -77
+          ]
+        },
+        "wing_fore_r": {
+          "rotation": [
+            0,
+            0,
+            -20
+          ]
+        },
+        "wing_hand_r": {
+          "rotation": [
+            0,
+            0,
+            -25
+          ]
+        },
+        "hind_leg_r": {
+          "rotation": [
+            15,
+            0,
+            0
+          ]
+        },
+        "hind_shin_r": {
+          "rotation": [
+            15,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.quetzalcoatlus.walk": {
+      "animation_length": 1,
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "neck1": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "wing_l": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              62
+            ],
+            "0.5": [
+              0,
+              0,
+              69
+            ],
+            "1.0": [
+              0,
+              0,
+              62
+            ]
+          }
+        },
+        "wing_fore_l": {
+          "rotation": [
+            0,
+            0,
+            15
+          ]
+        },
+        "wing_hand_l": {
+          "rotation": [
+            0,
+            0,
+            15
+          ]
+        },
+        "hind_leg_l": {
+          "rotation": {
+            "0.0": [
+              10,
+              0,
+              0
+            ],
+            "0.5": [
+              -10,
+              0,
+              0
+            ],
+            "1.0": [
+              10,
+              0,
+              0
+            ]
+          }
+        },
+        "hind_shin_l": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "wing_r": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              -62
+            ],
+            "0.5": [
+              0,
+              0,
+              -69
+            ],
+            "1.0": [
+              0,
+              0,
+              -62
+            ]
+          }
+        },
+        "wing_fore_r": {
+          "rotation": [
+            0,
+            0,
+            -15
+          ]
+        },
+        "wing_hand_r": {
+          "rotation": [
+            0,
+            0,
+            -15
+          ]
+        },
+        "hind_leg_r": {
+          "rotation": {
+            "0.0": [
+              -10,
+              0,
+              0
+            ],
+            "0.5": [
+              10,
+              0,
+              0
+            ],
+            "1.0": [
+              -10,
+              0,
+              0
+            ]
+          }
+        },
+        "hind_shin_r": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.quetzalcoatlus.glide": {
+      "animation_length": 1,
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "neck1": {
+          "rotation": [
+            -60,
+            0,
+            0
+          ]
+        },
+        "wing_l": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "wing_fore_l": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "wing_hand_l": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "hind_leg_l": {
+          "rotation": [
+            -78,
+            0,
+            0
+          ]
+        },
+        "hind_shin_l": {
+          "rotation": [
+            30,
+            0,
+            0
+          ]
+        },
+        "wing_r": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "wing_fore_r": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "wing_hand_r": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "hind_leg_r": {
+          "rotation": [
+            -78,
+            0,
+            0
+          ]
+        },
+        "hind_shin_r": {
+          "rotation": [
+            30,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.quetzalcoatlus.fly": {
+      "animation_length": 1.2,
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "neck1": {
+          "rotation": [
+            -60,
+            0,
+            0
+          ]
+        },
+        "wing_l": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              -12
+            ],
+            "0.3": [
+              0,
+              0,
+              14
+            ],
+            "0.6": [
+              0,
+              0,
+              6
+            ],
+            "0.9": [
+              0,
+              0,
+              -12
+            ],
+            "1.2": [
+              0,
+              0,
+              -12
+            ]
+          }
+        },
+        "wing_fore_l": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              -4
+            ],
+            "0.3": [
+              0,
+              0,
+              7
+            ],
+            "0.6": [
+              0,
+              0,
+              2
+            ],
+            "0.9": [
+              0,
+              0,
+              -4
+            ],
+            "1.2": [
+              0,
+              0,
+              -4
+            ]
+          }
+        },
+        "wing_hand_l": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "hind_leg_l": {
+          "rotation": [
+            -78,
+            0,
+            0
+          ]
+        },
+        "hind_shin_l": {
+          "rotation": [
+            30,
+            0,
+            0
+          ]
+        },
+        "wing_r": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              12
+            ],
+            "0.3": [
+              0,
+              0,
+              -14
+            ],
+            "0.6": [
+              0,
+              0,
+              -6
+            ],
+            "0.9": [
+              0,
+              0,
+              12
+            ],
+            "1.2": [
+              0,
+              0,
+              12
+            ]
+          }
+        },
+        "wing_fore_r": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              4
+            ],
+            "0.3": [
+              0,
+              0,
+              -7
+            ],
+            "0.6": [
+              0,
+              0,
+              -2
+            ],
+            "0.9": [
+              0,
+              0,
+              4
+            ],
+            "1.2": [
+              0,
+              0,
+              4
+            ]
+          }
+        },
+        "wing_hand_r": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "hind_leg_r": {
+          "rotation": [
+            -78,
+            0,
+            0
+          ]
+        },
+        "hind_shin_r": {
+          "rotation": [
+            30,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.quetzalcoatlus.takeoff": {
+      "animation_length": 1.2,
+      "loop": false,
+      "bones": {
+        "body": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "1.2": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "neck1": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "1.2": [
+              -60,
+              0,
+              0
+            ]
+          }
+        },
+        "wing_l": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              65
+            ],
+            "1.2": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "wing_fore_l": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              15
+            ],
+            "1.2": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "wing_hand_l": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              15
+            ],
+            "1.2": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "hind_leg_l": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "1.2": [
+              -78,
+              0,
+              0
+            ]
+          }
+        },
+        "hind_shin_l": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "1.2": [
+              30,
+              0,
+              0
+            ]
+          }
+        },
+        "wing_r": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              -65
+            ],
+            "1.2": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "wing_fore_r": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              -15
+            ],
+            "1.2": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "wing_hand_r": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              -15
+            ],
+            "1.2": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "hind_leg_r": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "1.2": [
+              -78,
+              0,
+              0
+            ]
+          }
+        },
+        "hind_shin_r": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "1.2": [
+              30,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.quetzalcoatlus.land": {
+      "animation_length": 1.2,
+      "loop": false,
+      "bones": {
+        "body": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "1.2": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "neck1": {
+          "rotation": {
+            "0.0": [
+              -60,
+              0,
+              0
+            ],
+            "1.2": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "wing_l": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "1.2": [
+              0,
+              0,
+              65
+            ]
+          }
+        },
+        "wing_fore_l": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "1.2": [
+              0,
+              0,
+              15
+            ]
+          }
+        },
+        "wing_hand_l": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "1.2": [
+              0,
+              0,
+              15
+            ]
+          }
+        },
+        "hind_leg_l": {
+          "rotation": {
+            "0.0": [
+              -78,
+              0,
+              0
+            ],
+            "1.2": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "hind_shin_l": {
+          "rotation": {
+            "0.0": [
+              30,
+              0,
+              0
+            ],
+            "1.2": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "wing_r": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "1.2": [
+              0,
+              0,
+              -65
+            ]
+          }
+        },
+        "wing_fore_r": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "1.2": [
+              0,
+              0,
+              -15
+            ]
+          }
+        },
+        "wing_hand_r": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "1.2": [
+              0,
+              0,
+              -15
+            ]
+          }
+        },
+        "hind_leg_r": {
+          "rotation": {
+            "0.0": [
+              -78,
+              0,
+              0
+            ],
+            "1.2": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "hind_shin_r": {
+          "rotation": {
+            "0.0": [
+              30,
+              0,
+              0
+            ],
+            "1.2": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "abyss:fire"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "abyss:fire"
+      }
+    ]
+  }
+}

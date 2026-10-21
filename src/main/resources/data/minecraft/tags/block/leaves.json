@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "abyss:red_leaves",
+    "abyss:yellow_leaves",
+    "abyss:green_leaves",
+    "abyss:purple_leaves"
+  ]
+}

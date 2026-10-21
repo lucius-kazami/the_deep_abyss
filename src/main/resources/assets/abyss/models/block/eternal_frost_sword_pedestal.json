@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "abyss:block/eternal_frost_pedestal_bottom",
+    "up": "abyss:block/eternal_frost_pedestal_top",
+    "north": "abyss:block/eternal_frost_pedestal_front",
+    "south": "abyss:block/eternal_frost_pedestal_back",
+    "west": "abyss:block/eternal_frost_pedestal_left",
+    "east": "abyss:block/eternal_frost_pedestal_right",
+    "particle": "abyss:block/eternal_frost_pedestal_front"
+  }
+}

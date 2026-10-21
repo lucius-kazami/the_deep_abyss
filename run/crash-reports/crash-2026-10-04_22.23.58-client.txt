@@ -1,0 +1,170 @@
+---- Minecraft Crash Report ----
+// Daisy, daisy...
+
+Time: 2026-10-04 22:23:58
+Description: Unexpected error
+
+java.lang.IllegalStateException: Missing elements in vertex: UV1, Normal
+	at TRANSFORMER/minecraft@1.21.10/com.mojang.blaze3d.vertex.BufferBuilder.endLastVertex(BufferBuilder.java:122) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/com.mojang.blaze3d.vertex.BufferBuilder.beginVertex(BufferBuilder.java:91) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/com.mojang.blaze3d.vertex.BufferBuilder.addVertex(BufferBuilder.java:149) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/com.mojang.blaze3d.vertex.VertexConsumer.addVertex(VertexConsumer.java:159) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/com.mojang.blaze3d.vertex.VertexConsumer.addVertex(VertexConsumer.java:154) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/abyss@1.0-SNAPSHOT/com.akashi.abyss.abyss.client.BlackHoleRenderer.lambda$submit$0(BlackHoleRenderer.java:233) ~[main/:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.client.renderer.feature.CustomFeatureRenderer.render(CustomFeatureRenderer.java:29) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.client.renderer.feature.FeatureRenderDispatcher.renderAllFeatures(FeatureRenderDispatcher.java:65) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.client.renderer.LevelRenderer.lambda$addMainPass$1(LevelRenderer.java:636) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@1.21.10/com.mojang.blaze3d.framegraph.FrameGraphBuilder.execute(FrameGraphBuilder.java:73) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.client.renderer.LevelRenderer.renderLevel(LevelRenderer.java:555) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.client.renderer.GameRenderer.renderLevel(GameRenderer.java:761) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.client.renderer.GameRenderer.render(GameRenderer.java:542) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.client.Minecraft.runTick(Minecraft.java:1336) [neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.client.Minecraft.run(Minecraft.java:934) [neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.client.main.Main.main(Main.java:229) [neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at net.neoforged.fml.startup.Client.main(Client.java:19) [loader-10.0.32.jar:10.0] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21.10/com.mojang.blaze3d.vertex.BufferBuilder.endLastVertex(BufferBuilder.java:122) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/com.mojang.blaze3d.vertex.BufferBuilder.beginVertex(BufferBuilder.java:91) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/com.mojang.blaze3d.vertex.BufferBuilder.addVertex(BufferBuilder.java:149) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/com.mojang.blaze3d.vertex.VertexConsumer.addVertex(VertexConsumer.java:159) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/com.mojang.blaze3d.vertex.VertexConsumer.addVertex(VertexConsumer.java:154) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/abyss@1.0-SNAPSHOT/com.akashi.abyss.abyss.client.BlackHoleRenderer.lambda$submit$0(BlackHoleRenderer.java:233) ~[main/:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.client.renderer.feature.CustomFeatureRenderer.render(CustomFeatureRenderer.java:29) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.client.renderer.feature.FeatureRenderDispatcher.renderAllFeatures(FeatureRenderDispatcher.java:65) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.client.renderer.LevelRenderer.lambda$addMainPass$1(LevelRenderer.java:636) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@1.21.10/com.mojang.blaze3d.framegraph.FrameGraphBuilder.execute(FrameGraphBuilder.java:73) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.client.renderer.LevelRenderer.renderLevel(LevelRenderer.java:555) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.client.renderer.GameRenderer.renderLevel(GameRenderer.java:761) ~[neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {neoforge:access_transformer}
+-- Uptime --
+Details:
+	JVM uptime: 80.316s
+	Wall uptime: 66.394s
+	High-res time: 78.667s
+	Client ticks: 957 ticks / 47.850s
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.client.Minecraft.fillReport(Minecraft.java:2381) [neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.client.Minecraft.emergencySaveAndCrash(Minecraft.java:998) [neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.client.Minecraft.run(Minecraft.java:957) [neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at TRANSFORMER/minecraft@1.21.10/net.minecraft.client.main.Main.main(Main.java:229) [neoforge-21.10.64-client-extra-aka-minecraft-resources.jar:?] {}
+	at net.neoforged.fml.startup.Client.main(Client.java:19) [loader-10.0.32.jar:10.0] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?] {}
+
+
+-- Affected level --
+Details:
+	All players: 1 total; LocalPlayer{name=Dev, id=31, pos=(-561.3735372922862, 64.0, -312.7847099161613), mode=CREATIVE, permission=4}
+	Chunk stats: 961, 460
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (-592,65,-272), Section: (at 0,1,0 in -37,4,-17; chunk contains blocks -592,-64,-272 to -577,319,-257), Region: (-2,-1; contains chunks -64,-32 to -33,-1, blocks -1024,-64,-512 to -513,319,-1)
+	Level time: 493 game time, 493 day time
+	Server brand: neoforge
+	Server type: Integrated singleplayer server
+	Tracked entity count: 194
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: Yes
+	Packs: vanilla, mod_resources, mod/abyss, mod/neoforge
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.10
+	Minecraft Version ID: 1.21.10
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.12.1, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 145479640 bytes (138 MiB) / 905969664 bytes (864 MiB) up to 4217372672 bytes (4022 MiB)
+	CPUs: 12
+	Processor Vendor: GenuineIntel
+	Processor Name: 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz
+	Identifier: Intel64 Family 6 Model 141 Stepping 1
+	Microarchitecture: Tiger Lake
+	Frequency (GHz): 2.69
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 12
+	Graphics card #0 name: Intel(R) UHD Graphics
+	Graphics card #0 vendor: Intel Corporation
+	Graphics card #0 VRAM (MiB): 1024.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 30.0.101.2079
+	Graphics card #1 name: NVIDIA GeForce RTX 3050 Laptop GPU
+	Graphics card #1 vendor: NVIDIA
+	Graphics card #1 VRAM (MiB): 4096.00
+	Graphics card #1 deviceId: VideoController2
+	Graphics card #1 versionInfo: 32.0.15.7283
+	Memory slot #0 capacity (MiB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 3.20
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MiB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 3.20
+	Memory slot #1 type: DDR4
+	Virtual memory max (MiB): 61930.93
+	Virtual memory used (MiB): 51061.79
+	Swap memory total (MiB): 45845.26
+	Swap memory used (MiB): 14299.01
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 106736.24, total: 487222.00
+	Space in storage for workdir (MiB): available: 106736.24, total: 487222.00
+	JVM Flags: 0 total; 
+	Debug Flags: 0 total; 
+	Launched Version: 21.10.64
+	Backend library: LWJGL version 3.3.3+5
+	Backend API: Intel(R) UHD Graphics GL version 3.3.0 - Build 30.0.101.2079, Intel
+	Window size: 854x480
+	GFLW Platform: win32
+	Render Extensions: GL_ARB_buffer_storage, GL_KHR_debug, GL_ARB_vertex_attrib_binding, GL_ARB_direct_state_access
+	GL debug messages: 
+	Is Modded: Definitely; Client brand changed to 'neoforge'; Server brand changed to 'neoforge'
+	Universe: 400921fb54442d18
+	Type: Integrated Server (map_client.txt)
+	Graphics mode: fancy
+	Render Distance: 12/12 chunks
+	Resource Packs: vanilla, mod_resources, mod/abyss, mod/neoforge (incompatible)
+	Current Language: ru_ru
+	Locale: ru_RU
+	System encoding: Cp1251
+	File encoding: UTF-8
+	CPU: 12x 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/31, l='ServerLevel[Новый мир]', x=-561.37, y=64.00, z=-312.78]]
+	Active Data Packs: vanilla, mod_data, mod/abyss, mod/neoforge
+	Available Data Packs: minecart_improvements, redstone_experiments, trade_rebalance, vanilla, mod/abyss, mod/neoforge, mod_data
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Experimental
+	World Seed: -3002295351072701942
+	Suppressed Exceptions: ~~NONE~~
+	Class Processors: 
+		00,00%: neoforge:neoforge_dev_dist_cleaner
+		00,00%: neoforge:computing_frames (marker)
+		00,00%: neoforge:runtime_enum_extender
+		04,61%: neoforge:access_transformer
+		00,04%: neoforge:mixin
+		00,00%: neoforge:simple_processors_default (marker)
+		00,01%: neoforge.coremods:field_to_getter.net.minecraft.world.level.biome.biome
+		00,01%: neoforge.coremods:field_to_getter.net.minecraft.world.level.block.flowerpotblock
+		00,01%: neoforge.coremods:field_to_getter.net.minecraft.world.level.levelgen.structure.structure
+		00,25%: neoforge.coremods:method_redirector
+	Mod List: 
+		neoforge-21.10.64-client-extra-aka-minecraft-resou|Minecraft                     |minecraft                     |1.21.10             |Manifest: NOSIGNATURE
+		neoforge-21.10.64.jar                             |NeoForge                      |neoforge                      |21.10.64            |Manifest: NOSIGNATURE
+		main                                              |the_deep_abyss                |abyss                         |1.0-SNAPSHOT        |Manifest: NOSIGNATURE
+	Crash Report UUID: 697fc787-554b-4ee6-83b0-a32680b647be
+	FML: 10.0.32
+	NeoForge: 21.10.64
